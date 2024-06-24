@@ -94,3 +94,48 @@ zipped file
 
 ### Diagram
 ![diagram](documentation/word_frequency.png)
+
+
+## Running The Program Locally
+***
+
+#### Requirements
+- You need Python installed in your machine.
+
+#### 1. Cloning The Repository
+1. Scroll to the top of my repository and click on the "clone or download button"
+  2. Decide whether you want to clone the project using HTTPS or an SSH key and do the following:
+    * HTTPS: click on the checklist icon to the right of the URL
+    * SSH key: first click on 'Use SSH' then click on the same icon as above
+  3. Open the 'Terminal'
+  4. Change the current working directory to the location where you want the cloned directory
+  5. Type 'git clone', and then paste the URL you copied earlier.
+  6. Press 'Enter' to create your local clone.
+
+   You can find both the source of this information and learn more about the process on the following link: [Cloning a Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+#### 2. Setup Virtual Environment
+ - `python -m venv venv`
+ - `source venv/bin/activate` Activate virtual environment (for Unix/Linux)
+ - `venv\Scripts\activate` Activate virtual environment (for Windows)
+ - `pip3 install -r requirements.txt` Install dependencies
+
+#### 3. Run The Python Program
+- From the root directory run the following command `python main.py`
+
+## Testing
+***
+- Testing frameworks: `pytest` and `unittest`
+
+#### 1. Running All Tests
+- `coverage run -m pytest -v`
+
+#### 2. Generate Coverage CLI Report
+   - `coverage report`
+
+#### 3. Generate Coverage HTML Report
+- `coverage html`
+
+#### 4. Opening the Coverage HTML Report in Your Browser
+- windows: `cmd /c start "" htmlcov/index.html`
+- Linux/macOS: `open htmlcov/index.html`
