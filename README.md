@@ -82,10 +82,8 @@ zipped file
 ### Database Schema
 1. entries table:
    - id (primary key)
-   - source_id (from CSV)
    - source (from CSV)
    - original_text (from CSV)
-   - processed_date
 
 2. words_frequency table:
    - entry_id (foreign key referencing entries table)
